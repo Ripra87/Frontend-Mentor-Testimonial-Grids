@@ -1,0 +1,169 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+   
+}
+
+    .content {
+        border-radius: 15px;
+        margin: auto 1rem 2rem 1rem;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .daniel {
+        background-color: hsl(263, 55%, 52%);
+        margin-top: 3rem;
+        grid-area: daniel;
+    }
+
+    .jonathan {
+        background-color: hsl(217, 19%, 35%);
+        grid-area: jonathan;
+    }
+
+    .jeanette {
+        background-color: hsl(0, 0%, 100%);
+        grid-area: jeanette;
+    }
+
+    .patrick {
+        background-color: hsl(219, 29%, 14%);
+        grid-area: patrick;
+    }
+
+    .kira {
+        background-color: hsl(0, 0%, 100%);
+        grid-area: kira;
+    }
+
+        .pattern {
+            position: absolute;
+            right: 3rem;
+            z-index: 0;
+        }
+
+        .profile {
+            margin-bottom: 0;
+        }
+
+
+            .profilePic {
+                width: 2rem;
+                border-radius: 100%;
+                border: solid 0.15rem;
+                border-color: hsl(0, 0%, 81%);
+                position: relative;
+                top: 1.5rem;
+                left: 1.5rem;
+                
+            }
+            
+            .profInfo {
+                font-size: 8px;
+                position: relative;
+                left: 5rem;
+                bottom: 1rem;
+               
+            }
+
+                h1, h2 {
+                    margin: 0 auto;
+                }
+
+                h1 {
+                    color: white;
+                }
+
+                h2 {
+                    color:hsl(0, 0%, 81%);
+                }
+
+                .jeanette h1 {
+                    color:hsl(217, 19%, 35%);
+                }
+
+                .jeanette .rate {
+                    color: black;
+                }
+
+                .kira .rate {
+                    color: black;
+                }
+
+                .kira h1 {
+                    color:hsl(217, 19%, 35%);
+                }
+
+                p {
+                    margin-top: 0;
+                }
+
+            .textContent {
+
+                margin: 0 2.9rem auto 2.9rem;
+            }
+
+                .rate {
+                    font-size: 20px;
+                    color:white;
+                }
+
+                .experience {
+                    margin-right: 0.75rem;
+                    margin-bottom: 1.7rem;
+                    color:hsl(0, 0%, 81%);
+                }
+
+
+
+                p {
+                    position: relative;
+                    z-index: 1;
+                }
+
+
+@media screen and (min-width: 501px) {
+    
+    body {
+
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    main {
+ 
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel daniel daniel daniel jonathan kira"
+        "jeanette patrick patrick patrick patrick patrick kira" ; 
+        width: 83.5rem;
+        height: 40rem;      
+        
+    }
+
+    .pattern {
+       right: 62rem;
+      
+    }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .kira {
+        grid-row-end: span 2;
+    }
+}
+
+       
+
